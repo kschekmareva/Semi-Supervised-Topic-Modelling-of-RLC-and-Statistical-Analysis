@@ -68,9 +68,6 @@ def parse_page(soup, cleaned_sentences):
                         if sentence in modal_text:
                             print(f"Найдено предложение: {sentence}")
                             df.at[i, 'Текст'] = cleaned_modal_text
-                    # for sentence in cleaned_sentences:
-                    #     if sentence in modal_text:
-                    #         print(f"Найдено предложение: {sentence}")
                 else:
                     print(f"Кнопка: {button_text}")
                     print("Модальное окно не найдено.")
